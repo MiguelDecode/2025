@@ -4,14 +4,6 @@ import { useFetchGifs } from "../../hooks/useFetchGifs";
 const GifGrid = ({ category }) => {
   const { images, isLoading } = useFetchGifs(category);
 
-  console.log({ images, isLoading });
-
-  /*   const [images, setImages] = useState([]);
-
-  useEffect(() => {
-    getGifs(category).then((newImages) => setImages(newImages));
-  }, []); */
-
   return (
     <>
       <h3>{category}</h3>
