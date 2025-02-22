@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { useEffect } from "react";
 import { useRef } from "react";
 import { useState } from "react";
@@ -23,7 +24,7 @@ const AddCategory = ({ handleAddCategory }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} aria-label="form">
       <input
         type="text"
         placeholder="Buscar gifs"
@@ -38,3 +39,7 @@ const AddCategory = ({ handleAddCategory }) => {
 };
 
 export default AddCategory;
+
+AddCategory.propTypes = {
+  handleAddCategory: PropTypes.func.isRequired,
+};
