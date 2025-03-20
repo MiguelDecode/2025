@@ -12,6 +12,9 @@ import "./index.css";
 // import { Memorize } from "./06-memos/Memorize.jsx";
 // import { MemoHook } from "./06-memos/MemoHook.jsx";
 // import { CallbackHook } from "./06-memos/CallbackHook.jsx";
-import { Padre } from "./07-tareaMemo/Padre.jsx";
+// import { Padre } from "./07-tareaMemo/Padre.jsx";
+import { TodoApp } from "./08-useReducer/TodoApp.jsx";
 
-createRoot(document.getElementById("root")).render(<Padre />);
+// import "./08-useReducer/intro-reducer.js";
+
+createRoot(document.getElementById("root")).render(<TodoApp />);
