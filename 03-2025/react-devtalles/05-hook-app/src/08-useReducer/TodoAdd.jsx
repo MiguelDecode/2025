@@ -21,7 +21,7 @@ export const TodoAdd = ({ handleNewTodo }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form aria-label="form" onSubmit={handleSubmit}>
       <input
         type="text"
         placeholder="Que hay que hacer?"
