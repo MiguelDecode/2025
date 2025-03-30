@@ -1,0 +1,21 @@
+{
+  "name": "02-bases",
+  "version": "0.0.1",
+  "description": "Esta es mi primera aplicación real de Node",
+  "license": "MIT",
+  "author": "Miguel Decode",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "axios": "^1.8.4",
+    "get-age": "^1.0.1"
+  }
+}
