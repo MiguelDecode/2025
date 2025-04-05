@@ -15,7 +15,11 @@ export const getUserById = (
   const user = users.find((user) => user.id === id);
 
   if (!user) {
-    return callback(`User not found with id: ${id}`);
+    setTimeout(() => {
+      callback(`User not found with id: ${id}`);
+    }, 1500);
+
+    return;
   }
 
   return callback(undefined, user);
