@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-primary: #09f;
+  --color-primary-light: #ceecff;
+  --color-primary-dark: rgb(0, 22, 83);
+
+  /* Breakpoints */
+  --breakpoint-xs: 350px;
+
+  /* Fonts */
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/Inter-VariableFont.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 700;
+  font-display: swap;
+}
+
+.social-button {
+  @apply p-2 size-12 xs:size-16 flex items-center justify-center rounded-full hover:scale-110 transition-transform;
+}

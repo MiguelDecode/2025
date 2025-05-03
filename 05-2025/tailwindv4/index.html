@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind cdn -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <link rel="stylesheet" href="./assets/output.css" />
+
+    <title>Tutorial Tailwind CSS v4</title>
+  </head>
+
+  <body
+    class="max-w-xl mx-auto min-h-dvh bg-gradient-to-b from-black via-sky-950 to-gray-800"
+  >
+    <header class="text-white">
+      <img
+        src="./assets/midudev.webp"
+        alt="midudev sonriendo"
+        class="h-[50vh] object-cover mask-radial-at-center mask-radial-from-50% mask-radial-to-70%"
+      />
+
+      <header class="flex flex-col justify-center items-center">
+        <span
+          class="text-sky-400 text-xl font-mono px-3 py-1 border border-black/50 rounded-full shadow-sm flex items-center justify-center bg-black/65 cursor-crosshair mb-8 -mt-4 z-0"
+          >@midudev</span
+        >
+        <h1 class="text-3xl font-extrabold leading-tight mt-1">
+          Miguel Ángel Durán
+        </h1>
+      </header>
+
+      <section class="flex gap-2 justify-center">
+        <!-- Twitch -->
+        <a
+          class="bg-purple-100 p-2 size-12 xs:size-16 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
+          href="http://twitch.tv/midudev"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Twitch"
+          title="Ir a Twitch de @midudev"
+        >
+          <svg width="28" height="28">
+            <use xlinx:href="./assets/sprite.svg#twitch" />
+          </svg>
+        </a>
+        <!-- Github -->
+        <a
+          class="bg-gray-900 p-2 size-12 xs:size-16 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
+          href="http://github.com/midudev"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Github"
+          title="Ir a Github de @midudev"
+        >
+          <svg width="28" height="28">
+            <use xlinx:href="./assets/sprite.svg#github" />
+          </svg>
+        </a>
+        <!-- Youtube -->
+        <a
+          class="bg-white p-2 size-12 xs:size-16 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
+          href="http://youtube.com/midudev"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Youtube"
+          title="Ir a Youtube de @midudev"
+        >
+          <svg width="28" height="28">
+            <use xlinx:href="./assets/sprite.svg#youtube" />
+          </svg>
+        </a>
+        <!-- Linkedin -->
+        <a
+          class="bg-white p-2 size-12 xs:size-16 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
+          href="http://linkedin.com/midudev"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Linkedin"
+          title="Ir a Linkedin de @midudev"
+        >
+          <svg width="28" height="28">
+            <use xlinx:href="./assets/sprite.svg#linkedin" />
+          </svg>
+        </a>
+        <a
+          class="p-2 size-12 xs:size-16 flex items-center justify-center rounded-full hover:scale-110 transition-transform bg-gradient-to-tr from-yellow-300 via-pink-600 to-purple-600"
+          href="http://instagram.com/midudev"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+          title="Ir a Instagram de @midudev"
+        >
+          <svg width="28" height="28">
+            <use xlinx:href="./assets/sprite.svg#linkedin" />
+          </svg>
+        </a>
+      </section>
+
+      <p class="text-primary text-center mt-4 text-sm px-4 text-balance">
+        Divulgador de programación, streamer y creador de contenido. Enseñando
+        JavaScript, React y Node.js de forma divertida
+      </p>
+    </header>
+
+    <main class="pt-4 px-4">
+      <div class="grid grid-cols-3 grid-rows-2 gap-2 w-full">
+        <a
+          href="https://cursoreact.dev"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="relative rounded-3xl overflow-hidden bg-gradient-to-br from-cyan-700 to-cyan-500 border border-cyan-900 flex flex-col items-start hover:scale-105 hover:contrast-125 transition col-span-2 p-7 min-h-[180px] group"
+        >
+          <span
+            class="absolute bottom-2 left-4 font-bold text-2xl group-hover:-translate-y-1 transition-transform"
+            >React.js</span
+          >
+          <svg
+            width="100"
+            height="100"
+            class="absolute -right-2 -bottom-2 -rotate-6 size-28 group-hover:-rotate-12 group-hover:scale-125 transition-transform"
+          >
+            <use xlink:href="./assets/sprite.svg#react" />
+          </svg>
+          <span
+            class="absolute top-2 left-0 text-xs border rounded-xl px-2 py-0.5"
+            >Curso de +14 clases</span
+          >
+        </a>
+
+        <a
+          href="https://cursohtml.dev"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="relative rounded-3xl overflow-hidden bg-gradient-to-br from-[#e44d26] via-[#f16529] to-white border border-[#e44d26] flex flex-col items-start hover:scale-105 hover:contrast-125 transition col-span-1 p-7 min-h-[180px] group"
+        >
+          <span
+            class="absolute bottom-2 left-4 font-bold text-2xl group-hover:-translate-y-1 transition-transform"
+            >HTML</span
+          >
+          <svg
+            width="100"
+            height="100"
+            class="absolute -right-2 -bottom-2 -rotate-6 size-28 group-hover:-rotate-12 group-hover:scale-125 transition-transform"
+          >
+            <use xlink:href="./assets/sprite.svg#html" />
+          </svg>
+          <span
+            class="absolute top-2 left-0 text-xs border rounded-xl px-2 py-0.5"
+            >Para principiantes</span
+          >
+        </a>
+
+        <a
+          href="https://cursocss.dev"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="relative rounded-3xl overflow-hidden bg-gradient-to-br from-[#663399] via-[#8e44ad] to-white border border-[#663399] flex flex-col items-start hover:scale-105 hover:contrast-125 transition col-span-1 p-7 min-h-[180px] group"
+        >
+          <span
+            class="absolute bottom-2 left-4 font-bold text-2xl group-hover:-translate-y-1 transition-transform"
+            >CSS</span
+          >
+          <svg
+            width="100"
+            height="100"
+            class="absolute -right-2 -bottom-2 -rotate-6 size-28 group-hover:-rotate-12 group-hover:scale-125 transition-transform"
+          >
+            <use xlink:href="./assets/sprite.svg#html" />
+          </svg>
+          <span
+            class="absolute top-2 left-0 text-xs border rounded-xl px-2 py-0.5"
+            >Diseño para principiantes</span
+          >
+        </a>
+
+        <a
+          href="https://cursonodejs.dev"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="relative rounded-3xl overflow-hidden bg-gradient-to-br from-[#215732] via-[#3c873a] to-[#8cc84b] border border-[#215732] flex flex-col items-start hover:scale-105 hover:contrast-125 transition col-span-2 p-7 min-h-[180px] group"
+        >
+          <span
+            class="absolute bottom-2 left-4 font-bold text-2xl group-hover:-translate-y-1 transition-transform"
+            >Node.js</span
+          >
+          <svg
+            width="100"
+            height="100"
+            class="absolute -right-2 -bottom-2 -rotate-6 size-28 group-hover:-rotate-12 group-hover:scale-125 transition-transform"
+          >
+            <use xlink:href="./assets/sprite.svg#node" />
+          </svg>
+          <span
+            class="absolute top-2 left-0 text-xs border rounded-xl px-2 py-0.5"
+            >Curso de +14 clases</span
+          >
+        </a>
+      </div>
+    </main>
+  </body>
+</html>
